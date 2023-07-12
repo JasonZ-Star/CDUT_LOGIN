@@ -64,6 +64,6 @@ def encrypt_password(p):
 
 if __name__ == '__main__':
     # 在这里替换成你自己的RSA公钥
-    password = '.'
+    password = input()
     encrypted_password = encrypt_password(password)
-    print('Encrypted Password:',  "__RSA__" + encrypted_password)
+    print('Encrypted Password:'  + encrypted_password)

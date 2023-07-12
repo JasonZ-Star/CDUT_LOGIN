@@ -1,4 +1,4 @@
-# <center>CDUT_LOGIN：成都理工大学教务处模拟登陆</center>
+# CDUT_LOGIN：成都理工大学教务处模拟登陆
 通过Python（目前只写了这一种）模拟登陆教务处  
 ## Requirements
 请确保安装了以下依赖包：

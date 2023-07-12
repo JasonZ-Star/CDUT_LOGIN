@@ -43,7 +43,11 @@ def get_params():
     }
 
 
-def get_login_url():
+def get_cas_login_url():
     return "https://cas.paas.cdut.edu.cn/cas/login?service=http%3A%2F%2Fjw.cdut.edu.cn%2Fsso%2Flogin.jsp" \
            "%3FtargetUrl%3Dbase64aHR0cDovL2p3LmNkdXQuZWR1LmNuL0xvZ29uLmRvP21ldGhvZD1sb2dvblNTT2NkbGdkeA" \
            "%3D%3D"
+
+
+def get_login_url():
+    return "https://jw.cdut.edu.cn/jsxsd/framework/xsMainV.htmlx"

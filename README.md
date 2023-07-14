@@ -3,7 +3,7 @@
 ## Requirements:
 请确保安装了以下依赖包：requests, pycryptodome, bs4   
 测试版本Python3.11, 其他版本不保证能够运行
-## Brief Introduction
+## Brief Introduction:
 #### 目前包含三个文件夹：  
 #### cookies_tools: 主要是与cookies操作有关的文件
 **_get_cookies.py_:** 用于登陆获取cookies  

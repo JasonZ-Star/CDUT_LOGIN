@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
-import get_timetable
-import get_transcript
+from tools import get_transcript
 
 # 请确保安装了以下依赖包：
 # - requests

@@ -1,0 +1,6 @@
+data/data.json
+venv/
+__tests__/
+js/
+test.py
+findHideValve.py

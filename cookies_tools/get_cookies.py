@@ -36,6 +36,7 @@ def get_cookies_statue():
 
 
 def get_cookies():
+    global password
     file_path = "data/data.json"
     flag_1 = 0
     flag_2 = 0
@@ -53,7 +54,7 @@ def get_cookies():
             break
     while flag_2 < 6:
         flag_2 = flag_2 + 1
-        password = input("请输入你的密码：\n", )
+        password = input("请输入你的密码：", )
         if len(password) == 0 and flag_2 < 6:
             print("学号不能为空，请重新输入！")
         elif flag_2 == 6:

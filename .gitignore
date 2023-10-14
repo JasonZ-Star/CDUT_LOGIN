@@ -3,4 +3,6 @@ venv/
 __tests__/
 js/
 test.py
+test*.py
 findHideValve.py
+temp.py

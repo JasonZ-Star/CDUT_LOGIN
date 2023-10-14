@@ -5,7 +5,7 @@ from tools import rsa_encryption
 import pprint
 import requests
 import http_information.constants
-
+import getpass
 
 def get_cookies_statue():
     flag = True
@@ -54,7 +54,7 @@ def get_cookies():
             break
     while flag_2 < 6:
         flag_2 = flag_2 + 1
-        password = input("请输入你的密码：", )
+        password = input("请输入你的密码：")
         if len(password) == 0 and flag_2 < 6:
             print("学号不能为空，请重新输入！")
         elif flag_2 == 6:

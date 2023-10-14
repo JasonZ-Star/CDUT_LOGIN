@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
+
+from cookies_tools import get_cookies, login_with_cookies
 from tools import get_transcript
 
 # 请确保安装了以下依赖包：
@@ -7,8 +9,8 @@ from tools import get_transcript
 # - pycryptodome
 
 if __name__ == '__main__':
-    # cookies = get_cookies.get_cookies_statue()
-    # login = login_with_cookies.login(cookies)
+    cookies = get_cookies.get_cookies_statue()
+    login = login_with_cookies.login(cookies)
     cookies = json.loads(open("data/data.json", "r").read())
     get_transcript.get_transcript(cookies)
 

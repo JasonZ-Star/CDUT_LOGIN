@@ -7,18 +7,19 @@ import requests
 import http_information.constants
 import getpass
 
+
 def get_cookies_statue():
     flag = True
     while flag:
         # 检查data.json文件是否存在
-        file_path = "data/data.json"
-        if os.path.exists(file_path):
+        cookie_path = "K:\\Code_Files\\LOGIN\\data\\data.json"
+        if os.path.exists(cookie_path):
             flag = input("cookies存在，是否需要更新cookies?(Y/N)：\n")
             flag = flag.upper()
-            if flag == "Y":
+            if flag == 'Y' or flag == 'y':
                 return get_cookies()
-            elif flag == "N":
-                json_data = json.load(open("data/data.json", "r"))
+            elif flag == 'N' or flag == 'n':
+                json_data = json.load(open(cookie_path, "r"))
                 print("---------------------------------------")
                 print("\t\t\tcookies加载成功")
                 print("---------------------------------------")
@@ -37,7 +38,7 @@ def get_cookies_statue():
 
 def get_cookies():
     global password
-    file_path = "data/data.json"
+    file_path = "K:\\Code_Files\\LOGIN\\data\\data.json"
     flag_1 = 0
     flag_2 = 0
     while flag_1 < 6:
@@ -102,13 +103,13 @@ def get_cookies():
             print("登录成功！")
             print("--------")
             # 2.4将cookies保存到文件中
-            with open("data/data.json", "w") as file:
+            with open(file_path, "w") as file:
                 json.dump(requests.utils.dict_from_cookiejar(se.cookies), file)
             print("--------------------------------------")
             print("你的cookies已存在于:'data\data.json'中'")
             print("--------------------------------------")
-            pprint.pprint(json.load(open("data/data.json", "r")))
-            return json.load(open("data/data.json", "r"))
+            pprint.pprint(json.load(open(file_path, "r")))
+            return json.load(open(file_path, "r"))
         else:
             print("------------------------------------------------------")
             print("确认登录失败！请清空data/data.json文件中的内容，重新运行程序！")

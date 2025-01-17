@@ -6,3 +6,5 @@ test.py
 test*.py
 findHideValve.py
 temp.py
+/transcript/styled_table.xlsx
+*.html

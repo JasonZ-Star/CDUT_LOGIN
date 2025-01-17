@@ -25,5 +25,5 @@ def get_transcript(cookies):
             key = row[1]
             transcript_dict[key].append([col4, col5])
 
-        print(dict(transcript_dict))
+        return dict(transcript_dict)
         # 提取第一列、第四列和第五列的数据

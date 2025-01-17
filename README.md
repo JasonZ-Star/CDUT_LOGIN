@@ -23,7 +23,15 @@ _get_timetable.py_ : 用于获取课程表
 _get_transcript.py_ : 用于获取课程成绩，以字典的形式返回  
 _rsa_encryption.py_ : 用于将用户输入的密码转换为服务器可以识别的加密密码（注意如果pycryptodome库无法正常使用，请自行搜索解决）  
 #### transcript: 保存获取到的成绩为excel文件
-### Main Program:
+# Main Program:
 _main.py_: 位于根目录下，主程序，获得并存储cookie在data/data.json中
-
-
+## Claims:
+1. 本项目仅供学习交流使用，不得用于任何商业用途
+2. 本项目仅仅是模拟登陆，不会记录任何用户的信息
+3. 本项目不会对用户的任何操作负责
+## License
+   本项目采用 Apache 许可证 2.0。详细信息请参阅 LICENSE 文件。
+## 联系
+如有任何问题或建议，欢迎提交*issue*或请通过以下方式与我联系：
+- 邮件: jasonzstar@163.com
+- GitHub: [JasonZ-Star](https://github.com/JasonZ-Star)

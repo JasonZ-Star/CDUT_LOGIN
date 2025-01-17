@@ -9,6 +9,8 @@ def login(cookies):
     else:
         index = requests.get(url=http_information.constants.get_login_url(), cookies=cookies)
         if index.status_code == 200:
-            print("登录成功")
+            print("---------------------------------------")
+            print("\t\t\t\t登录成功！！")
+            print("---------------------------------------")
             return index.text
 
